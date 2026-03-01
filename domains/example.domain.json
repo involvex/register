@@ -1,0 +1,23 @@
+{
+  "description": "Example registration for example.is-not-a.dev (demo values)",
+  "domain": "is-not-a.dev",
+  "subdomain": "example",
+  "owner": {
+    "repo": "https://github.com/involvex/register",
+    "email": "hello@is-not-a.dev"
+  },
+  "record": {
+    "A": ["192.0.2.123", "198.51.100.45"],
+    "AAAA": ["2001:db8::123", "2001:db8::124"],
+    "MX": ["mx1.is-not-a.dev", "mx2.is-not-a.dev"],
+    "TXT": ["example_verification=abcdef123456"],
+    "CAA": [
+      { "flags": 0, "tag": "issue", "value": "letsencrypt.org" },
+      { "flags": 0, "tag": "issuewild", "value": "sectigo.com" }
+    ],
+    "SRV": [
+      { "priority": 10, "weight": 60, "port": 5060, "target": "sip.is-not-a.dev" }
+    ]
+  },
+  "proxied": false
+}

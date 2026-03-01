@@ -1,0 +1,18 @@
+{
+  "description": "Involvex project site",
+  "domain": "is-not-a.dev",
+  "subdomain": "involvex",
+  "owner": {
+    "repo": "https://github.com/involvex/register",
+    "email": "involvex@proton.me"
+  },
+  "record": {
+    "A": ["1.1.1.1", "1.0.0.1"],
+    "AAAA": ["::1", "::2"],
+    "MX": ["mx1.example.com", "mx2.example.com"],
+    "TXT": ["involvex_verification=replace-me"],
+    "CAA": [ { "flags": 0, "tag": "issue", "value": "letsencrypt.org" } ],
+    "SRV": [ { "priority": 10, "weight": 60, "port": 5060, "target": "sipserver.example.com" } ]
+  },
+  "proxied": false
+}
